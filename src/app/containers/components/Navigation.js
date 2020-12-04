@@ -25,7 +25,7 @@ const Navigation = () => {
     return (
             <nav>
                 <ul>
-                    <NavLink activeStyle={activeStyle} to="/home" exact>
+                    <NavLink activeStyle={activeStyle} to="/" exact>
                       <motion.li
                       whileHover={{ scale: 1.2,  color: '#f8e112' }}
                       transition={{ type: 'spring', stiffness: 200 }}>

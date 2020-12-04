@@ -14,14 +14,14 @@ function App() {
   const location = useLocation();
   return (
    <>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="inline-navi">
         <Header />
         <Navigation  />
       </div>
       <AnimatePresence  location={location} key={location.key} exitBeforeEnter>
         <Switch>
-          <Route exact path='/home'>
+          <Route exact path='/'>
             <Home />
           </Route>
           <Route exact path='/about'>
