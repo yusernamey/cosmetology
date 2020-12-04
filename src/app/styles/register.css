@@ -1,0 +1,24 @@
+.register {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.register h1, p {
+    color: black;
+}
+
+.register h1 {
+    margin-top: 1.5em;
+    font-size: 3em;
+}
+
+.register p {
+    margin-top: 1.5em;
+    width: 70vh;
+    font-size: 1.2em;
+}
