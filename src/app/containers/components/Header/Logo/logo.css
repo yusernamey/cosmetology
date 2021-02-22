@@ -1,0 +1,9 @@
+svg {
+  width: 60px;
+  height: 10vh;
+  overflow: visible;
+  stroke: rgba(233, 196, 196, 1);
+  stroke-width: 2;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
