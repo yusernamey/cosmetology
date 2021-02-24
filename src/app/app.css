@@ -1,27 +1,17 @@
-body,
-ul,
-h1,
-h2,
-h3,
-p,
-button,
-a,
-div {
-  margin: 0;
-  padding: 0;
-  color: white;
-  letter-spacing: 2px;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+* {
+  box-sizing: border-box;
 }
 body {
-  background: black;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   overflow: hidden;
 }
-.inline-navi {
-  display: flex;
-  justify-content: space-between;
-  height: 15vh;
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }

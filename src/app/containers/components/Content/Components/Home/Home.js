@@ -1,10 +1,10 @@
 import "./home.css";
-import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
+import HomeAnimation from "../Animations/Home/HomeAnimation";
 
 export const Home = () => {
   let text = [
     <h1>Karolina Kostinaitė</h1>,
     <p>Profesionali Grožio Procedūrų Specialistė</p>,
   ];
-  return <AnimateSlides className="home" output={text} />;
+  return <HomeAnimation className="home" output={text} />;
 };

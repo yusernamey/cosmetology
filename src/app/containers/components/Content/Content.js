@@ -1,4 +1,5 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import {
   About,
   Contact,
@@ -8,28 +9,31 @@ import {
   Services,
 } from "./Components";
 export const Content = () => {
+  const location = useLocation();
   return (
     <>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/services">
-          <Services />
-        </Route>
-        <Route exact path="/gallery">
-          <Gallery />
-        </Route>
-        <Route exact path="/register">
-          <Register />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/services">
+            <Services />
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery />
+          </Route>
+          <Route exact path="/register">
+            <Register />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </>
   );
 };

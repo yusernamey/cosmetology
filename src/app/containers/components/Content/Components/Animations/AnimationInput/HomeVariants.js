@@ -1,18 +1,13 @@
 // slide animations
-export const slideVariants = {
+export const HomeVariants = {
   hidden: {
-    x: "-100vw",
     opacity: 0,
-    scale: 0.8,
   },
   visible: {
-    x: 0,
     opacity: 1,
-    scale: 1,
   },
   transition: {
-    type: "tween",
-    ease: "anticipate",
+    ease: "easeInOut",
     duration: 0.5,
   },
   exit: {

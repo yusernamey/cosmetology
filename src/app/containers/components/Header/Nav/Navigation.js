@@ -1,6 +1,7 @@
 import "./navigation.css";
 import { NavLink } from "react-router-dom";
 import NavAnimation from "../../Content/Components/Animations/Navigation/NavAnimation";
+import { navVariants } from "../../Content/Components/Animations/AnimationInput/NavVariants";
 
 const routeList = [
   "home",
@@ -26,7 +27,7 @@ export const Navigation = () => {
           return (
             <NavLink
               key={i}
-              activeStyle={NavAnimation.activeStyle}
+              activeStyle={navVariants.activeStyle}
               exact
               to={navItem === "home" ? "/" : navItem}
             >

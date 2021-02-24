@@ -1,3 +1,1 @@
-import CardWrapper from "./Cards";
-
-export default CardWrapper;
+export * from "./Cards";
