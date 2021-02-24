@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2vw;
+}
+
+nav a {
+  padding: 0.6em;
+}

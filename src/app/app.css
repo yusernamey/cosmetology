@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
