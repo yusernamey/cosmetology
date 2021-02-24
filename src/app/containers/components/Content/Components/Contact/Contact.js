@@ -1,5 +1,5 @@
 import "./contact.css";
-import AnimateSlides from "../Animations";
+import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
 
 export const Contact = () => {
   let text = [

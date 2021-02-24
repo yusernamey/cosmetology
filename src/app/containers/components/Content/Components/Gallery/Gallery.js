@@ -1,5 +1,5 @@
 import "./gallery.css";
-import AnimateSlides from "../Animations";
+import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
 
 export const Gallery = () => {
   let text = [

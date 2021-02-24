@@ -1,5 +1,5 @@
 import "./home.css";
-import AnimateSlides from "../Animations";
+import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
 
 export const Home = () => {
   let text = [

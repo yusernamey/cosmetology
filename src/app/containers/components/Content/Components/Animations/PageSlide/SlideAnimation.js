@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { slideVariants } from "./AnimationInput";
+import { slideVariants } from "../AnimationInput";
 export default class AnimateSlides extends React.Component {
   render() {
     return (

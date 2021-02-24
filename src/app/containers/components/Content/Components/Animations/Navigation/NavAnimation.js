@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { navVariants } from "./AnimationInput";
-export default class AnimateSlides extends React.Component {
+import { navVariants } from "../AnimationInput";
+export default class NavAnimation extends React.Component {
   render() {
     return (
       <motion.li

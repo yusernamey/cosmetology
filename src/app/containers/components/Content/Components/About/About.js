@@ -1,5 +1,5 @@
 import "./about.css";
-import AnimateSlides from "../Animations";
+import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
 
 export const About = () => {
   let text = [

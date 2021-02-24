@@ -1,5 +1,5 @@
 import "./register.css";
-import AnimateSlides from "../Animations";
+import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
 
 export const Register = () => {
   let text = [
