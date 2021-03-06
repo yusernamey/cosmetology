@@ -6,5 +6,5 @@ export const Gallery = () => {
     <h1>Apie mane</h1>,
     <p>mano rubai geltoni Lorem ipsum dolor sit amet.</p>,
   ];
-  return <AnimateSlides className="gallery" output={text} />;
+  return <AnimateSlides className="about">{text}</AnimateSlides>;
 };

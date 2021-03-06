@@ -1,4 +1,3 @@
-// slide animations
 export const slideVariants = {
   hidden: {
     x: "-100vw",

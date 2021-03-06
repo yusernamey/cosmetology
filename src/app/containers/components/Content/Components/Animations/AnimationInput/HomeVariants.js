@@ -1,4 +1,3 @@
-// slide animations
 export const HomeVariants = {
   hidden: {
     opacity: 0,

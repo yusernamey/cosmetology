@@ -4,10 +4,9 @@ import { App } from "./app";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <Router basename={process.env.PUBLIC_URL}>
+    <App />
+  </Router>,
+
   document.getElementById("root")
 );

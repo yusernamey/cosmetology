@@ -31,7 +31,7 @@ export const Navigation = () => {
               exact
               to={navItem === "home" ? "/" : navItem}
             >
-              <NavAnimation output={navList[i]} />
+              <NavAnimation> {navList[i]} </NavAnimation>
             </NavLink>
           );
         })}

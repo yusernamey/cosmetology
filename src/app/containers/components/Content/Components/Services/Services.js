@@ -10,5 +10,5 @@ export const Services = () => {
       <Cards />
     </div>,
   ];
-  return <AnimateSlides className="services" output={text} />;
+  return <AnimateSlides className="about">{text}</AnimateSlides>;
 };

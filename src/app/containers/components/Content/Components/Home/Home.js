@@ -6,5 +6,5 @@ export const Home = () => {
     <h1>Karolina Kostinaitė</h1>,
     <p>Profesionali Grožio Procedūrų Specialistė</p>,
   ];
-  return <HomeAnimation className="home" output={text} />;
+  return <HomeAnimation className="home">{text}</HomeAnimation>;
 };

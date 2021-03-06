@@ -12,7 +12,7 @@ export default class AnimateSlides extends React.Component {
         exit={HomeVariants.exit}
         className={this.props.className}
       >
-        {this.props.output}
+        {this.props.children}
       </motion.div>
     );
   }

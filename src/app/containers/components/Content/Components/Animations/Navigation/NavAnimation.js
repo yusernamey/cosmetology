@@ -8,7 +8,7 @@ export default class NavAnimation extends React.Component {
         whileHover={navVariants.hoverStyle}
         transition={navVariants.transition}
       >
-        {this.props.output}
+        {this.props.children}
       </motion.li>
     );
   }
