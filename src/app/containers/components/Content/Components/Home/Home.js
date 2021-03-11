@@ -3,8 +3,8 @@ import HomeAnimation from "../Animations/Home/HomeAnimation";
 
 export const Home = () => {
   let text = [
-    <h1>Karolina Kostinaitė</h1>,
-    <p>Profesionali Grožio Procedūrų Specialistė</p>,
+    <h1 key={Math.random()}>Karolina Kostinaitė</h1>,
+    <p key={Math.random()}>Profesionali Grožio Procedūrų Specialistė</p>,
   ];
   return <HomeAnimation className="home">{text}</HomeAnimation>;
 };

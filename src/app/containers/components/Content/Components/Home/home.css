@@ -1,7 +1,7 @@
 .home {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("../../../../../assets/images/img.jpg");
+    url("../../../../../../assets/images/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

@@ -7,7 +7,7 @@ export const HomeVariants = {
   },
   transition: {
     ease: "easeInOut",
-    duration: 0.5,
+    duration: 0.35,
   },
   exit: {
     y: "100vh",

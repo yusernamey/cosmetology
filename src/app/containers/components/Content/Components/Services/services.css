@@ -1,13 +1,15 @@
 .services {
-  height: 100vh;
+  height: 100%;
   background-color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 }
-
+.services::-webkit-scrollbar {
+  display: none;
+}
 .services h1,
 p {
   color: black;
@@ -20,5 +22,6 @@ p {
 
 .services p {
   margin-top: 1.5em;
+  width: 70vh;
   font-size: 1.2em;
 }

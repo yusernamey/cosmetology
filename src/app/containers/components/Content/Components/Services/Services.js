@@ -1,12 +1,8 @@
 import "./services.css";
 import AnimateSlides from "../Animations/PageSlide/SlideAnimation";
-
+import { CardList } from "../Cards";
 export const Services = () => {
-  let text = [
-    <div>
-      <h1>Paslaugos</h1>
-      <p>Paslaugos kurias teikiu</p>
-    </div>,
-  ];
-  return <AnimateSlides className="about">{text}</AnimateSlides>;
+  let text = [<h1 key={Math.random()}>Paslaugos</h1>, <CardList />];
+
+  return <AnimateSlides className="services">{text}</AnimateSlides>;
 };

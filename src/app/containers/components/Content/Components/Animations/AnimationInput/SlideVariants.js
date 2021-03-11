@@ -12,7 +12,7 @@ export const slideVariants = {
   transition: {
     type: "tween",
     ease: "anticipate",
-    duration: 0.5,
+    duration: 0.35,
   },
   exit: {
     y: "100vh",
