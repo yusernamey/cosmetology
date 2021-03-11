@@ -11,14 +11,15 @@ export const Card = memo(
     const cardRef = useRef(null);
     const containerRef = useRef(null);
     const [currentPostionY, setCurrentPositionY] = useState(0);
+
     useEffect(() => {
       setCurrentPositionY(window.pageYOffset);
       isSelected === true
         ? (document.body.style.overflowY = "hidden")
         : (document.body.style.overflowY = "scroll");
       window.scrollTo(0, currentPostionY);
-      console.log("debug");
     }, [isSelected]);
+
     return (
       <li ref={containerRef} className={`card`}>
         <Overlay isSelected={isSelected} />
@@ -40,7 +41,8 @@ export const Card = memo(
             <ContentPlaceholder content={content} />
           </motion.div>
         </div>
-        {!isSelected && <Link to={`/${id}`} className={`card-open-link`} />}
+
+        {!isSelected && <Link to={id} className={`card-open-link`} />}
       </li>
     );
   },
@@ -55,6 +57,6 @@ const Overlay = ({ isSelected }) => (
     style={{ pointerEvents: isSelected ? "auto" : "none" }}
     className="overlay"
   >
-    <Link to="/" />
+    <Link to={process.env.PUBLIC_URL + "/"} />
   </motion.div>
 );

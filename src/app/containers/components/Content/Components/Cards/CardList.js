@@ -14,6 +14,10 @@ const List = ({ match }) => (
 
 export const CardList = () => (
   <Router>
-    <Route path={["/:id", "/"]} component={List} />
+    <Route
+      basename={process.env.PUBLIC_URL}
+      path={[process.env.PUBLIC_URL + "/:id", process.env.PUBLIC_URL + "/"]}
+      component={List}
+    />
   </Router>
 );

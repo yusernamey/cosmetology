@@ -20,9 +20,6 @@ const navList = [
   "Kontaktai",
 ];
 export const Navigation = () => {
-  const handleClick = () => {
-    console.log("nu veikia");
-  };
   return (
     <nav>
       <ul>
@@ -31,7 +28,6 @@ export const Navigation = () => {
             <NavLink
               key={i}
               activeStyle={navVariants.activeStyle}
-              onClick={() => handleClick()}
               exact
               to={navItem === "home" ? "/" : navItem}
             >
