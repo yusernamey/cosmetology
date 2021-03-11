@@ -40,7 +40,7 @@ export const Card = memo(
             <ContentPlaceholder content={content} />
           </motion.div>
         </div>
-        {!isSelected && <Link to={id} className={`card-open-link`} />}
+        {!isSelected && <Link to={`/${id}`} className={`card-open-link`} />}
       </li>
     );
   },
